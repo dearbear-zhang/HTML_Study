@@ -96,6 +96,8 @@ function doPay(payData, cbsuccess, cberror) {
 						paySrc = data.order_string;
 					} else if (payChannel.id === 'wxpay') {
 						var statement = {};
+
+
 						statement.appid = data.app_id;
 						statement.noncestr = data.nonce_str;
 						statement.package = data.package;

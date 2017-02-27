@@ -1,0 +1,9 @@
+.comment_top {background: #fff;padding:15px; border-bottom: 1px solid #e1e3e6}
+.comment_top .imgtop{width: 50px;height: 50px;border-radius: 50%;text-align: center;margin: 0 auto;position: absolute; top: -10px;left: 43%;border: 2px solid #e0e0e0;}
+.comment_top .imgtop img{width: 100%;height: 100%;border-radius: 50%;}
+.comment_top h5 {margin-bottom: 20px;}
+.comment_top span {color: red;font-size: 35px; display: block;text-align: center; }
+.comment_top span b {margin: 0 5px;}
+.comment_top .xcolor {color: #e0e2e2}
+.comment_min textarea {border:0; padding: 15px;font-size: 14px;}
+.quit { width: 80%;height: 40px; margin: 0 auto; display: block;background: #1982fe;color: #fff;font-size: 16px; margin-top: 40px; border:0;}

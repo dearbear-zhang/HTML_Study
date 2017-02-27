@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="">
+  <head>
+          <meta charset="utf-8">
+          <title>Hello</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <meta name="format-detection" content="telephone=no" />
+          <link rel="stylesheet" href="css/mui.min.css"><!--外部css-->
+          <link rel="stylesheet" href="css/comm.css"><!--公共css-->
+          <link rel="stylesheet" href="css/index_my_newaddress.css"><!--本页css-->
+  </head>     
+  <body>
+      <!-- 内容 -->
+      <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">新建地址</h1>
+      </header>
+      <div id="scroll" class="mui-content mui-scroll-wrapper" style="bottom:5px;top:0px;">
+         <div class="mui-scroll">
+            <div class="mui-content newadd_wrap">
+                <div class="newadd_box">
+                  <div class="newa be-box box-p-a"><span>联&nbsp;&nbsp;系&nbsp;人：</span><span><input type="text" placeholder="输入联系人" id="contacts"></span></div>
+                  <div class="newa be-box box-p-a"><span>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</span><span><input type="text" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')" / placeholder="输入电话" id="phone"></span></div>
+                  <div class="newa be-box box-p-a"><span>详细地址：</span><span><textarea name="" cols="30" rows="4" placeholder="输入详细地址" id="address"></textarea></span></div>
+                  <div class="newa be-box box-p-a" id="tag"><span>标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签：</span><button value="0" class="btncolor">无</button><button value="1">公司</button><button value="2">家里</button><button value="3">学校</button></div>
+                  
+                </div>
+                <button class="btn" onclick="add_address()">添加</button> 
+            </div>  
+         </div>
+      </div>
+     
+      
+      <script src="js/jquery-3.1.1.min.js"></script><!--jquery-->
+      <script src="js/mui.min.js"></script><!--外部js-->
+      <script src="js/base.js"></script><!--基础js-->
+      <script src="js/md5.js"></script><!--加密js-->
+      <script src="js/itemjs/index_my_newaddress.js"></script><!--本页js-->
+      <script>
+      tag = "无";
+       mui.init({
+        swipeBack: true
+       });
+
+       //阻止触摸
+       $('body').on('touchmove',function(event){
+            event.preventDefault();
+        });
+       (function($) {
+         //阻尼系数
+           var deceleration = mui.os.ios?0.003:0.00006;
+           $('#scroll').scroll({
+             indicators: true, //是否显示滚动条
+             deceleration:deceleration
+             });
+         })(mui); 
+
+     $('.newa button').on("click",function(){
+        $('.newa button').removeClass("btncolor")
+        $(this).addClass("btncolor")
+        tag = $(this).html()
+
+     })
+      </script>
+  </body>
+</html>

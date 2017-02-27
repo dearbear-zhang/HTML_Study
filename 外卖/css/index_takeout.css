@@ -1,0 +1,48 @@
+.takeout_head {background: #0176ff; z-index: 0;position: fixed;top:0;left: 0;right: 0;z-index: 99;}
+.takeout_head p {margin-left: 15px; width:70%;  padding: 15px 25px; color: #fff; background:url(../images/coomon/dw.png) no-repeat center left; background-size: 8%;white-space: nowrap; overflow: hidden;text-overflow:ellipsis;font-weight: bold;}
+.takeout_head em img {width:50%;height:100%;}
+.takeout_head em{position: fixed; top: 12px; right: 10px; width: 50px;height: 25px; display: block;z-index: 99;text-align: center;}
+.takeout_banner {padding-bottom: 20px;}
+.takeout_banner ul li {width: 25%; height:40px; float: left; text-align: center; margin: 15px 0;}
+.takeout_banner ul li p {font-size: 12px; color: #7f7f7f;}
+
+
+.taeout_sale .tit{background: #f2f1f1;color: #999999;border-left: 5px solid #0176ff; height: 35px; line-height: 35px; padding-left: 10px;}
+.taeout_sale .head {height: 40px; line-height: 40px;border-bottom: 1px solid #e4e4e4;background: #fff;}
+.taeout_sale .head ul li {display: table-cell;  width: 1%;text-align: center; overflow: hidden; text-overflow:ellipsis; white-space:nowrap;color: #999999; font-size: 12px; font-family: Georgia;}
+.taeout_sale .head ul li em {padding-top: 5px; padding-left: 5px; display: inline-block; }
+.taeout_sale .head ul li em img {width: 10px;height: 8px;}
+.taeout_sale .head ul li.active{color:#0176ff;}
+
+.taeout_merchant {background: #f2f1f1;}
+.taeout_merchant ul { padding-top: 10px;}
+.taeout_merchant ul li {padding: 10px 10px 10px 10px;background: #fff; margin-bottom: 10px;}
+.taeout_merchant ul li:active{background: rgba(0,0,0,0.1);}
+.taeout_merchant .merchant_l  img{width: 100%; height: 100%;}
+.taeout_merchant .merchant_l {width: 80px; height:80px;}
+.taeout_merchant .merchant_r {width: 70%}
+
+.taeout_merchant .merchant_r h5{font-size: 15px; display: block; font-weight: bold; color: #333333;white-space:nowrap; overflow: hidden; text-overflow:ellipsis;height: 25px; line-height: 25px;}
+.taeout_merchant .merchant_r  p {height: 25px; line-height: 28px; font-size: 12px;white-space:nowrap; overflow: hidden; text-overflow:ellipsis;}
+.taeout_merchant .merchant_r .p1 img {width: 10px;height: 10px;}
+.taeout_merchant .merchant_r .p1 span {margin-left: 10px;}
+.taeout_merchant .merchant_r .p2{border-bottom: 1px solid #e4e4e4; color: #666666;}
+.taeout_merchant .merchant_r .p2 span{margin: 0 5px;}
+.taeout_merchant .merchant_r .p2 em{color: #999999;}
+.taeout_merchant .merchant_r .p3{background: url(../images/coomon/new_01.png) no-repeat center left; background-size: 7%; text-indent: 30px; color: #9f9f9f; }
+.taeout_merchant .merchant_r .p4{background: url(../images/coomon/new_02.png) no-repeat center left; background-size: 7%; text-indent: 30px;color: #9f9f9f;}
+
+
+/*搜索窗体*/
+.searchbar {position: fixed;top: 0;left: 0;width: 100%; height:100%;background: #fff;z-index: 100}
+.searchbar .search_head {border-bottom: 1px solid #dadada;height:40px;}
+.searchbar .search_head label {border-right:1px solid #dadada; width: 25%;height: 40px;}
+.searchbar .search_head .place-row .place-input {border-bottom: 0;width: 100%;padding-right: 10%; padding-left: 28%;position: absolute;top: 0;left:0;}
+.searchbar .searchbtn {position: fixed;bottom: 4em;left: 0;right: 0}
+.searchbar .searchbtn button {width: 80%;margin: 1em auto;display: block;background: #f39800; color: #fff;padding: 0.5em 0;}
+
+/*mui*/
+ .mui-pull-bottom-tips { text-align: center;background-color: #efeff4; font-size: 15px;line-height: 40px;color: #777;}
+ .mui-slider .mui-slider-group .mui-slider-item img{width: 30px;height: 30px;}
+ .mui-bar {box-shadow:none; border-top: 1px solid #e4e4e4;}
+ .mui-table-view{background: none}

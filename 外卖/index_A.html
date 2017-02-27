@@ -1,0 +1,169 @@
+﻿<!DOCTYPE HTML>
+<html lang="">
+<head>
+        <meta charset="utf-8">
+        <title>捞友-应用台</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        
+            <link rel="stylesheet" href="css/mui.min.css"><!--外部css-->
+          <link rel="stylesheet" href="css/comm.css"><!--公共css-->
+          <link rel="stylesheet" href="css/index_takeout.css"><!--本页css-->
+</head>
+<style type="text/css">
+	.Popover {position: fixed;left: 3.3rem;top: 1.05rem;z-index: 999;display: none;}
+	.mui-table-view{border-radius: 0.2rem;border: 1px solid rgba(200, 199, 204, 0.58) !important;}
+	.mui-table-view:before,.mui-table-view:after{height: 0px;}
+	.mask_layer{position: fixed;left: 0px;right: 0px;width: 100%;height: 100%;z-index:998;display: none;}
+</style>
+<body>
+    <!--<div class="mui-content"></div>-->
+    <nav class="ly_bottom mui-bar mui-bar-tab">
+       <a id="defaultTab" class="mui-tab-item mui-active" href="Ly_Hot_index.html">
+              <span class="mui-icon mui-icon-hot"></span>
+              <span class="mui-tab-label">外卖</span>
+          </a>
+          <a id="defaultTab2" class="mui-tab-item" href="index_order.html">
+              <span class="mui-icon mui-icon-baz"></span>
+              <span class="mui-tab-label">订单</span>
+          </a>
+          <a class="mui-tab-item" href="Ly_App_index.html">
+              <span class="mui-icon mui-icon-app"></span>
+              <span class="mui-tab-label">我的</span>
+          </a>
+    </nav>
+	
+    <script src="js/base.js"></script><!--公共JS-->
+    <script src="js/mui.min.js"></script><!--外部js-->
+   <script src="js/jquery-3.1.1.min.js"></script><!--jquery-->
+  <script src="js/md5.js"></script><!--加密js-->
+    <script src="js/mui.pullToRefresh.js"></script><!--下拉刷新js-->
+    <script src="js/mui.pullToRefresh.material.js"></script><!--下拉刷新js-->
+    <script src="js/itemjs/index_takeout.js"></script><!--本页js-->
+    <script src="js/WebViewJavascriptBridge.js"></script><!--原生跳转js-->
+
+
+    <script type="text/javascript" charset="utf-8">
+         //mui初始化
+   
+        mui.init({
+            subpages:[{
+              url:'index.html',//子页面HTML地址，支持本地地址和网络地址
+              id:'index.html',//子页面标志
+              styles:{
+                top:"0",//子页面顶部位置
+                bottom:"0px",//子页面底部位置
+                width:"auto",//子页面宽度，默认为100%
+                height:"auto",//子页面高度，默认为100%
+               
+              },
+              extras:{}//额外扩展参数
+            }]
+          });
+
+        var subpages = ['index.html','index_order.html','index_my.html'];
+     
+        
+        var aniShow = {};
+        
+         //当前激活选项
+        var activeTab = subpages[0];
+        var title = document.getElementById("title");
+         //选项卡点击事件
+        mui('.mui-bar-tab').on('tap', 'a', function(e) {
+			   if(this.querySelector('.mui-tab-label').innerHTML == '外卖'){
+				    mui.openWindow({
+						url:'indexa.html'
+					});
+			    }
+			    if(this.querySelector('.mui-tab-label').innerHTML == '订单'){
+				    mui.openWindow({
+						url:'index_B.html'
+					});
+			    }
+			
+			    if(this.querySelector('.mui-tab-label').innerHTML == '我的'){
+				    mui.openWindow({
+						url:'index_C.html'
+					});
+			    }
+			  
+			 
+			    
+			})
+        
+        	var createIframe = function (el, opt) {
+			    var elContainer = document.querySelector(el);
+			    var wrapper = document.querySelector(".mui-iframe-wrapper");
+			    if(!wrapper){
+			        // 创建wrapper 和 iframe
+			        wrapper = document.createElement('div');
+			        wrapper.className = 'mui-iframe-wrapper';
+			        for(var i in opt.style){
+			            wrapper.style[i] = opt.style[i];
+			        }
+			        var iframe = document.createElement('iframe');
+			        iframe.src = opt.url;
+			        iframe.id = opt.id || opt.url;
+			        iframe.name = opt.id;
+			        wrapper.appendChild(iframe);
+			        elContainer.appendChild(wrapper);
+			    }else{
+			        var iframe = wrapper.querySelector('iframe');
+			        iframe.src = opt.url;
+			        iframe.id = opt.id || opt.url;
+			        iframe.name = iframe.id;
+			    }
+			}
+        
+         //自定义事件，模拟点击“首页选项卡”
+        document.addEventListener('gohome', function() {
+            var defaultTab = document.getElementById("defaultTab");
+            //模拟首页点击
+            mui.trigger(defaultTab, 'tap');
+            //切换选项卡高亮
+            var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
+            if (defaultTab !== current) {
+                current.classList.remove('mui-active');
+                defaultTab.classList.add('mui-active');
+            }
+        });
+        
+         //IOS独立跳转函数
+        function setupWebViewJavascriptBridge(callback) {
+          if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+          if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+          window.WVJBCallbacks = [callback];
+          var WVJBIframe = document.createElement('iframe');
+          WVJBIframe.style.display = 'none';
+          WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+          document.documentElement.appendChild(WVJBIframe);
+          setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+        }
+
+        setupWebViewJavascriptBridge(function(bridge) {
+          var uniqueId = 1
+          function log(message, data) {
+              var log = document.getElementById('log')
+              var el = document.createElement('div')
+              el.className = 'logLine'
+              el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+              if (log.children.length) { log.insertBefore(el, log.children[0]) }
+              else { log.appendChild(el) }
+          }
+
+          bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+              log('ObjC called testJavascriptHandler with', data)
+              var responseData = { 'Javascript Says':'Right back atcha!' }
+              log('JS responding with', responseData)
+              responseCallback(responseData)
+          })
+        })
+    </script>
+</body>
+
+     
+ 
+ 
+</html>

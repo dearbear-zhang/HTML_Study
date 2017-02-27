@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="">
+  <head>
+          <meta charset="utf-8">
+          <title>Hello</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          
+          <link rel="stylesheet" href="css/mui.min.css"><!--外部css-->
+          <link rel="stylesheet" href="css/comm.css"><!--公共css-->
+          <link rel="stylesheet" href="css/index_takeout.css"><!--本页css-->
+  </head>     
+  <body style="background:#fff;padding-top:30%;padding-bottom:15%;">
+      
+      <!-- 定位搜索窗体 -->
+       <div class="searchbar" style="display:none" >
+         <div class="search_head">
+           <div class="mui-input-row place-row">
+               <label id="city"></label>
+               <input type="text" class="mui-input-clear place-input" id="beginplace4" placeholder="请输入开始地址">
+           </div>
+         </div>
+         <div class="searchbtn">
+           <!--<button  id="searchid">确定</button>-->
+         </div>
+       </div>
+       <!-- 定位窗 -->
+      <div class="takeout_head">
+          <p id="GeoLocation"><b>定位中....</b></p>
+          <em id="again_position"><img src="images/coomon/position.png" alt=""></em>
+          <div class="mui-input-row mui-search" style="margin:0 20px;">
+              <input type="search" class="mui-input-clear" placeholder="搜索商家、商品名称"  style="background:#fff">
+          </div>
+      </div>
+        <!-- 内容 -->
+      <div id="scroll" class="mui-content mui-scroll-wrapper  mui-slider-group" style="bottom:50px;top:100px;">
+          <div class="mui-scroll">
+            <div class="mui-content" id="myApp">
+                <div id="slider" class="mui-slider" style="background:#fff;" >
+                    <div class="mui-slider-group mui-slider-loop  takeout_banner">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <ul class="mui-table-view2">
+                                
+                                <!-- <li><a href="#"><img src="images/coomon/foot_10.png" alt=""></a><p>鲜花蛋糕</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_11.png" alt=""></a><p>汉堡炸鸡</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_12.png" alt=""></a><p>日韩料理</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_13.png" alt=""></a><p>麻辣烫</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_06.png" alt=""></a><p>披萨意面</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_07.png" alt=""></a><p>川湘菜</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_08.png" alt=""></a><p>包子粥店</p></li> -->
+                            </ul>
+                        </div>
+                        <!-- 第一张 -->
+                        <div class="mui-slider-item">
+                           <ul class="mui-table-view2">
+                                
+                                <!-- <li><a href="#"><img src="images/coomon/foot_02.png" alt=""></a><p>甜品</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_03.png" alt=""></a><p>商店超市</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_04.png" alt=""></a><p>预定早餐</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_05.png" alt=""></a><p>果蔬生鲜</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_06.png" alt=""></a><p>新店特惠</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_07.png" alt=""></a><p>简餐</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_08.png" alt=""></a><p>高铁订餐</p></li> -->
+                            </ul>
+                        </div>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                          <ul class="mui-table-view2">
+                                
+                               <!--  <li><a href="#"><img src="images/coomon/foot_10.png" alt=""></a><p>鲜花蛋糕</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_11.png" alt=""></a><p>汉堡炸鸡</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_12.png" alt=""></a><p>日韩料理</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_13.png" alt=""></a><p>麻辣烫</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_06.png" alt=""></a><p>披萨意面</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_07.png" alt=""></a><p>川湘菜</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_08.png" alt=""></a><p>包子粥店</p></li> -->
+                            </ul>   
+                        </div>
+                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <ul class="mui-table-view2">
+                                
+                                <!-- <li><a href="#"><img src="images/coomon/foot_02.png" alt=""></a><p>甜品</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_03.png" alt=""></a><p>商店超市</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_04.png" alt=""></a><p>预定早餐</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_05.png" alt=""></a><p>果蔬生鲜</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_06.png" alt=""></a><p>新店特惠</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_07.png" alt=""></a><p>简餐</p></li>
+                                <li><a href="#"><img src="images/coomon/foot_08.png" alt=""></a><p>高铁订餐</p></li> -->
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                       
+                    </div>
+                </div>
+                <div class="taeout_sale">
+                
+                   <div class="tit">附近的推荐商家</div>
+                   <div class="head">
+                       <ul>
+                           <li class="active">综合排序<em><img src="images/coomon/head_jt01.png" alt=""></em></li>
+                           <li>销量最高<em><img src="images/coomon/head_jt02.png" alt=""></em></li>
+                           <li>距离最近<em><img src="images/coomon/head_jt02.png" alt=""></em></li>
+                           <li>筛选<em><img src="images/coomon/head_jt02.png" alt=""></em></li>
+                       </ul>
+                   </div>
+                   <div class="taeout_merchant">
+                       <ul class="mui-table-view">
+                          <!--  <li class="be-box box-p-j">
+                               <div class="merchant_l">
+                                   <img src="images/coomon/merchant_01.jpg" alt="">
+                               </div>
+                               <div class="merchant_r">
+                                   <h5>小花猫老坛酸菜牛肉面1</h5>
+                                   <p class="p1"><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx01.png" alt=""><span>月销量200单</span></p>
+                                   <p class="p2"><span>起送￥20</span>|<span>配送￥2.5</span><em>830M 31分钟</em></p>
+                                   <p class="p3">满20减10,满30减10,满50减20</p>
+                                   <p class="p4">新用户下单立减20.1</p>
+                               </div>
+                           </li>
+                            <li class="be-box box-p-j">
+                               <div class="merchant_l">
+                                   <img src="images/coomon/merchant_01.jpg" alt="">
+                               </div>
+                               <div class="merchant_r">
+                                   <h5>小花猫老坛酸菜牛肉面2</h5>
+                                   <p class="p1"><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx01.png" alt=""><span>月销量200单</span></p>
+                                   <p class="p2"><span>起送￥20</span>|<span>配送￥2.5</span><em>830M 31分钟</em></p>
+                                   <p class="p3">满20减10,满30减10,满50减20</p>
+                                   <p class="p4">新用户下单立减20.1</p>
+                               </div>
+                           </li>
+                           -->
+                       </ul>
+                   </div>
+                 
+                </div>
+            </div> 
+   
+          </div>
+      </div>
+     
+      <!-- 底部导航 -->
+      <nav class="ly_bottom mui-bar mui-bar-tab">
+          <a id="defaultTab" class="mui-tab-item mui-active" href="Ly_Hot_index.html">
+              <span class="mui-icon mui-icon-hot"></span>
+              <span class="mui-tab-label">外卖</span>
+          </a>
+          <a id="defaultTab2" class="mui-tab-item" href="index_order.html">
+              <span class="mui-icon mui-icon-baz"></span>
+              <span class="mui-tab-label">订单</span>
+          </a>
+          <a class="mui-tab-item" href="Ly_App_index.html">
+              <span class="mui-icon mui-icon-app"></span>
+              <span class="mui-tab-label">我的</span>
+          </a>
+      </nav>
+      <script src="js/jquery-3.1.1.min.js"></script><!--jquery-->
+      <script src="js/mui.min.js"></script><!--外部js-->
+     <!-- <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=28fefadd07cb5831ea15393a0f99c088&plugin=AMap.Geocoder,AMap.Autocomplete,AMap.CitySearch,AMap.Geolocation,AMap.ToolBar"></script>定位js-->
+      <script src="js/base.js"></script><!--基础js-->
+      <script src="js/md5.js"></script><!--加密js-->
+      <script src="js/mui.pullToRefresh.js"></script><!--下拉刷新js-->
+      <script src="js/mui.pullToRefresh.material.js"></script><!--下拉刷新js-->
+      <script src="js/itemjs/index_takeout.js"></script><!--本页js-->
+      <script src="js/WebViewJavascriptBridge.js"></script><!--原生跳转js-->
+  </body>
+</html>

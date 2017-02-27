@@ -1,0 +1,13 @@
+.newadd_wrap {padding: 10px;}
+.newadd_wrap .newadd_box {background: #fff; border-radius: 5px; padding:0 10px; margin-top: 10px;}
+.newadd_wrap .newadd_box .newa {padding: 10px 10px; }
+.newadd_wrap .btn {width: 30%; height: 30px;display: block;margin: 10px auto;background: #0176ff;color: #fff;position: fixed;bottom;left: 0;right: 0}
+.newadd_wrap .newadd_box .newa span {display: block; color: #999999;font-size: 14px; }
+.newadd_wrap .newadd_box .newa span input{border: none;padding: 0;margin-bottom: 0;height: 20px}
+.newadd_wrap .newadd_box .newa span:nth-child(1){color: #000; width: 80px;}
+.newadd_wrap .newadd_box .newa span:nth-child(2){color: #000; width: 75%;}
+
+.newadd_wrap .newadd_box .newa button {display: block; border-radius: 10px;color: #000;width: 40px;height: 20px; margin-right: 5px;border: 0;}
+.newadd_wrap .newadd_box .newa span textarea{border: none}
+.newadd_wrap .newadd_box .newa .btncolor {background: #0176ff;color: #fff;}
+.newadd_wrap .btn {width: 90%;border: 0; height: 40px; margin-top: 10px;}
