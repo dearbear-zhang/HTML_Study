@@ -6,22 +6,24 @@
     <link rel="stylesheet" href="css/test.css">
 </head>
 <body class="login_bg" style="background-image: url(images/login_bg.png)">
+
     <header class="login_top">
         <h1>店长版</h1>
     </header>
     <div class="login_in">
         <div style="line-height: 70px; height: 70px">
             <img class="login_img" src="images/login_account.png">
-            <input class="login_input" type="text" placeholder="请输入账号">
+            <input id="account" class="login_input" type="text" placeholder="请输入账号">
         </div>
         <input class="login_underline">
         <div>
             <img class="login_img" src="images/login_pwd.png">
-            <input class="login_input" type="text" placeholder="请输入密码">
+            <input id="pwd" class="login_input" type="text" placeholder="请输入密码">
             <img class="login_img" src="images/login_pwd_forget.png">
         </div>
         <input class="login_underline">
-        <button class="login_button" type="button">登录</button>
+        <button class="login_button" type="button" onclick="onLoginIn()">登录</button>
     </div>
+    <script src="js/login.js"></script>
 </body>
 </html>
