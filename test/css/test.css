@@ -1,6 +1,7 @@
 .login_bg{
     background-size: cover;
     font-size:62.5%;
+    font-family: PingFangSC-Regular, sans-serif;
 }
 
 .login_top{
@@ -40,4 +41,21 @@
     vertical-align: middle;
     width: 50px;
     height: 50px;
+}
+
+.login_button{
+    width: 90%;
+    height: 130px;
+    border-radius: 60px;
+    font-size: 40px;
+    background: #0176FF;
+    color: #ffffff;
+    margin: 70px 0 0 0;
+}
+
+input::-webkit-input-placeholder {
+    color: #252525;
+}
+input:-moz-placeholder {
+    color:#252525;
 }
