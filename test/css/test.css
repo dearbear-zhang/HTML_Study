@@ -1,0 +1,43 @@
+.login_bg{
+    background-size: cover;
+    font-size:62.5%;
+}
+
+.login_top{
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    padding: 300px 0px 0px 0px;
+}
+
+.login_in{
+    color: #ffffff;
+    padding: 650px 0px 0px 100px;
+    /* font-size: 24px; */
+    height: 70px;
+}
+
+.login_input{
+    position: relative;
+    margin: 0px 0px 0px 50px;
+    height: 70px;
+    font-size: 30px;
+    width: 75%;
+    border: 0;
+    background: rgba(0,0,0,0);
+}
+
+.login_underline{
+    position: relative;
+    margin: 20px 0px 0px 12%;
+    width: 88%;
+    background: rgba(0,0,0,0);
+    border: 0;
+    border-top: 1px solid
+}
+
+.login_img{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
