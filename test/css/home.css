@@ -1,0 +1,15 @@
+.home_my{
+    font-size: 4em;;
+    color: #EFEFF4;
+    float:right;
+}
+
+.location_head{
+    background: #0176FF;
+}
+
+.location_head p{
+    background:url("/images/coomon/dw.png");
+    margin:2em;
+    width:70%;
+}

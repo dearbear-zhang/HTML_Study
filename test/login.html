@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body class="login_bg" style="background-image: url(images/login_bg.png)">
 
@@ -15,7 +15,7 @@
             <img class="login_img" src="images/login_account.png">
             <input id="account" class="login_input" type="text" placeholder="请输入账号">
         </div>
-        <input class="login_underline">
+        <input class="login_underline" readonly="readonly">
         <div>
             <img class="login_img" src="images/login_pwd.png">
             <input id="pwd" class="login_input" type="text" placeholder="请输入密码">
@@ -25,5 +25,8 @@
         <button class="login_button" type="button" onclick="onLoginIn()">登录</button>
     </div>
     <script src="js/login.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/utilTool.js"></script>
+    <script src="js/md5.js"></script>
 </body>
 </html>
