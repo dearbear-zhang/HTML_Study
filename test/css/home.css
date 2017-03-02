@@ -5,11 +5,16 @@
 }
 
 .location_head{
-    background: #0176FF;
+    background: #0176ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .location_head p{
-    background:url("/images/coomon/dw.png");
+    background:url("/images/coomon/dw.png") no-repeat center left;
+    color: #ffffff;
     margin:2em;
     width:70%;
 }
