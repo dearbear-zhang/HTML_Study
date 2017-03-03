@@ -12,9 +12,24 @@
     right: 0;
 }
 
-.location_head p{
-    background:url("/images/coomon/dw.png") no-repeat center left;
-    color: #ffffff;
-    margin:2em;
-    width:70%;
+.location_head div{
+    margin: 25px;
+    padding-left: 30px;
+}
+.location_head div textarea{
+    background: url(../images/coomon/dw.png) no-repeat left;
+    color: #fff;
+    background-size: 7%;
+    width: 81%;
+    font-size: 39px;
+    height: 79px;
+    line-height: 79px;
+    padding-left: 70px;
+    margin: 10px 0;
+}
+
+.location_head div img{
+    position: relative;
+    width: 9%;
+    padding: 10px 0;
 }
