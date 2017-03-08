@@ -35,6 +35,30 @@
             </div>
         </div>
     </div>
+    <div id="slider" class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/load3.png"></a> </div>
+            <div class="mui-slider-item"><a href="#"><img src="images/load1.png"></a> </div>
+            <div class="mui-slider-item"><a href="#"><img src="images/load2.png"></a> </div>
+            <div class="mui-slider-item"><a href="#"><img src="images/load3.png"></a> </div>
+            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/load1.png"></a> </div>
+        </div>
+        <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+        </div>
+    </div>
+    <div class="mui-content">
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li id="switch" class="mui-table-view-cell">
+                定时轮播
+                <div class="mui-switch">
+                    <div class="mui-switch-handle"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
     <script src="js/mui.min.js"></script>
     <script>
         mui.init();
@@ -57,6 +81,22 @@
                 }
             });
         }
+//        mui.plusReady(function () {
+//            var slider = mui(".mui-slider");
+//            slider.slider({interval:5000})
+//        })
+        var slider = mui("#slider");
+        document.getElementById("switch").addEventListener('toggle', function(e) {
+            if (e.detail.isActive) {
+                slider.slider({
+                    interval: 3000
+                });
+            } else {
+                slider.slider({
+                    interval: 0
+                });
+            }
+        });
     </script>
 </body>
 </html>
