@@ -14,7 +14,7 @@
 
 .location_head div{
     margin: 25px;
-    padding-left: 30px;
+    padding: 0 30px;
 }
 .location_head div textarea{
     background: url(../images/coomon/dw.png) no-repeat left;
@@ -32,4 +32,12 @@
     position: relative;
     width: 9%;
     padding: 10px 0;
+}
+
+.search{
+    width: 100%;
+    height: 85px;
+    border-radius: 15px;
+    font-size: 39px;
+    background: #fff;
 }
