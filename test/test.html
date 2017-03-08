@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/mui.min.css">
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">学习</h1>
+    </header>
+    <div class="mui-content">
+        <button type="button" onclick="showPrompt()">点击</button>
+    </div>
+    <div>
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>用户名</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入用户名">
+            </div>
+            <div class="mui-input-row">
+                <label>密码</label>
+                <input type="password" class="mui-input-password" placeholder="请输入密码">
+            </div>
+            <div class="mui-button-row">
+                <button type="button" class="mui-btn mui-btn-primary">确认</button>
+                <button type="button" class="mui-btn mui-btn-danger">取消</button>
+            </div>
+        </form>
+        <div class="mui-slider">
+            <div class="mui-slider-group">
+                <div class="mui-slider-item"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script>
+        mui.init();
+        function showConfirmTest() {
+            mui.confirm("您真的要这样做吗?", "提示对话框", new Array("取消","确认"), function (e) {
+                if (e.index == 1){
+                    mui.toast("确认键按下")
+                }
+                if (e.index == 0){
+                    mui.toast("取消键按下")
+                }
+            });
+        }
+        function showPrompt() {
+            mui.prompt("请输入您的姓名", "张三", "输入框", new Array("取消", "确认"), function (e) {
+                if (e.index == 1){
+                    mui.toast(e.value)
+                }else {
+                    mui.toast("取消输入")
+                }
+            });
+        }
+    </script>
+</body>
+</html>
