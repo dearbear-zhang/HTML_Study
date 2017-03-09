@@ -1,0 +1,55 @@
+.register_wrap .register_box {margin-top: 10px;}
+.register_wrap .register_box label {font-size: 15px;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;}
+.register_wrap .register_box input {font-size: 15px;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;}
+.register_wrap .register_box .agreement {text-align: right; color: #333333;font-size: 14px; padding:10px 10px 0 0;}
+.register_wrap .register_box button {width: 85%; height: 40px;margin-top: 20px;}
+.register_wrap .register_box .mui-input-row {position: relative;}
+.register_wrap .register_box small {position:absolute;top: 7px;right: 5px;color:#fff;display: block; border-radius: 5px;background: #fd6776;padding: 5px;font-size: 13px; }
+
+.mui-input-group .mui-input-row:after {background-color: #e4e4e4}
+.mui-input-group:after {background: none}
+.mui-input-group:before{background: none}
+
+.mui-input-row label{width: 25%;}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{width: 75%;}
+
+
+
+.chk_1 {
+    display: none;
+}
+.chk_1 + label {
+	background-color: #FFF;
+	border: 1px solid #C1CACA;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+	padding: 8px;
+	border-radius: 5px;
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	margin-left: 5px;
+	margin-bottom: -5px;
+}
+.chk_1 + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.chk_1:checked + label {
+	background-color: #ECF2F7;
+	border: 1px solid #92A1AC;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+	color: #243441;
+}
+
+.chk_1:checked + label:after {
+	content: '\2714';
+	position: absolute;
+	top: -6px;
+	left: 0px;
+	color: #758794;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 1px 0 0 0;
+	vertical-align: text-top;
+}

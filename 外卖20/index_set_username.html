@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="">
+  <head>
+          <meta charset="utf-8">
+          <title>Hello</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          
+          <link rel="stylesheet" href="css/mui.min.css"><!--外部css-->
+          <link rel="stylesheet" href="css/comm.css"><!--公共css-->
+          <link rel="stylesheet" href="css/index_set_password.css"><!--本页css-->
+  </head>     
+  <body style="background:#f2f1f1">
+      <!-- 内容 -->
+      <header class="mui-bar mui-bar-nav">
+        <a class="back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">修改用户名</h1>
+      </header>
+      <div id="scroll" class="mui-content mui-scroll-wrapper" style="bottom:2px;top:0px;">
+         <div class="mui-scroll">
+            <div class="mui-content register_wrap">
+              <div class="register_box">
+                <form class="mui-input-group">
+                  <div class="mui-input-row">
+                   <label>用户名</label>
+                   <input type="text" class="mui-clear" placeholder="" id="newuser">
+                  </div>
+                </form>
+                <div class="mui-button-row">
+                  <button type="button" class="mui-btn mui-btn-primary" onclick="set_pwd()">确认</button>
+                </div>  
+              </div>
+            </div>
+         </div>
+      </div>
+        
+      
+      <script src="js/jquery-3.1.1.min.js"></script><!--jquery-->
+      <script src="js/mui.min.js"></script><!--外部js-->
+      <script src="js/base.js"></script><!--基础js-->
+      <script src="js/md5.js"></script><!--加密js-->
+      <script src="js/itemjs/index_set_username.js"></script><!--本页js-->
+      <script>
+       mui.init({
+        swipeBack: true
+       });
+
+       //阻止触摸
+       $('body').on('touchmove',function(event){
+            event.preventDefault();
+        });
+       (function($) {
+         //阻尼系数
+           var deceleration = mui.os.ios?0.003:0.00006;
+           $('#scroll').scroll({
+             indicators: true, //是否显示滚动条
+             deceleration:deceleration
+             });
+         })(mui); 
+     
+      </script>
+  </body>
+</html>

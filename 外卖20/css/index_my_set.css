@@ -1,0 +1,7 @@
+.set_wrap { margin-top: 10px;}
+.set_wrap ul {background: #fff;border-radius: 5px;}
+.set_wrap ul li {background: #fff; height: 40px;line-height: 40px;border-bottom: 1px solid #e4e4e4; padding-left: 10px;font-size: 14px; background:url(../images/coomon/address_jt.png) no-repeat 98% center; background-size: 2%;}
+.set_wrap ul li span {float: right;margin-right: 20px; color: #1982fe;}
+.set_wrap ul li:active{background: rgba(0,0,0,0.1);}
+
+.quit {width: 80%;height:35px;margin: 0 auto; display: block; margin-top: 40px;background: #1982fe;	color: #fff;border: none}

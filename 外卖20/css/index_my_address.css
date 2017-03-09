@@ -1,0 +1,42 @@
+.receipt_wrap { padding: 10px;}
+.r_tit {padding: 10px; color: #0779ff; text-align: center;font-size: 16px; background: #fff; position: relative;bottom: 0px;left: 0;right: 0;z-index: 99; width: 95%; margin:0 auto;}
+.r_tit img {width: 19px;height: 19px; margin-bottom: -4px;margin-right: 5px;}
+.receipt_wrap .receipt_box {background: #fff; border-radius: 5px; }
+.receipt_wrap .r_con {padding: 10px; margin-top: 10px; }
+.receipt_wrap .r_con em {margin-right: 20px;font-size: 14px;}
+.receipt_wrap .r_con p {font-size: 16px; color: #000; height: 40px}
+.receipt_wrap .r_con p span{float: right; width: 16px;height: 16px;}
+.receipt_wrap .r_con p span:active {background: rgba(0,0,0,0.1);}
+.receipt_wrap .r_con p span img {width: 100%;height: 100%;}
+.receipt_wrap .r_con .useraddress {font-size: 14px;color: #000;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;}
+.receipt_wrap .r_con i {color: #9a9d9f; font-size: 14px;padding:2px; text-align: center; margin-left: 15px; font-style:normal;border-radius: 2px;}
+/*地址修改弹出*/
+.mui-popover {height: 360px;width: 90%; margin:0 auto;border-radius: 10px;  bottom: 0 !important;left: 0 !important;right:0 !important;}
+.mui-popover .mui-popover-arrow:after{position: relative;}
+
+
+.add_popover {display: none}
+.add_popover .mui-scroll-wrapper {background: rgba(0,0,0,0.5); width: 100%; z-index: 98}
+
+.setaddress {z-index: 99;background: #fff;border-radius: 10px;margin: 0 auto;position: relative;top: 120px; left: 0;right: 0; width: 90%;display: none;}
+.setaddress .tit {font-size: 16px; text-align: center;background: #fff;border-radius: 10px; padding-top: 10px;}
+.setaddress .newadd_wrap {padding: 0px 10px 0 10px;background: #fff;border-radius: 5px;}
+.setaddress .newadd_box {background: #fff;  padding:0 10px; margin-top: 10px;}
+.setaddress .newadd_box .newa {padding: 8px 10px; }
+.setaddress .btn {width: 90%; height: 30px;display: block;margin: 10px auto;background: #0176ff;color: #fff;}
+.setaddress .newadd_box .newa span {display: block; color: #999999;font-size: 14px; }
+.setaddress .newadd_box .newa span input{border: none;padding: 0;margin-bottom: 0;height: 20px}
+.setaddress .newadd_box .newa span:nth-child(1){color: #000; width: 80px;}
+.setaddress .newadd_box .newa span:nth-child(2){color: #000; width: 75%;}
+
+.setaddress .newadd_box .newa button {display: block; border-radius: 10px;color: #000;width: 40px;height: 20px; margin-right: 5px;border: 0;}
+.setaddress .newadd_box .newa span textarea{border: none}
+.setaddress .newadd_box .newa .btncolor {background: #0176ff;color: #fff;}
+.setaddress .btn {width: 90%;border: 0; height: 40px; margin-top: 10px;}
+
+.receipt_wrap .deleaddress {position: absolute;right: 20px; color: #a6a6a6;font-size: 14px;}
+.receipt_wrap .deleaddress:active {background:rgba(0,0,0,0.5); }
+
+.mui-switch-mini {width: 40px;}
+.mui-switch {height: 23px;}
+.mui-switch .mui-switch-handle {width: 20px;height: 20px;}

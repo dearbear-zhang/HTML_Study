@@ -1,0 +1,10 @@
+.balance_wrap {padding: 10px 20px;}
+.balance_wrap .balance_box {background: #fff; border-radius: 5px; margin-top: 10px}
+.balance_wrap .balance_box .money {border-bottom: 1px solid #e4e4e4;text-align: center; padding-top: 50px;  padding-bottom: 20px;}
+.balance_wrap .balance_box .money h5{text-align: center; color: #000;}
+.balance_wrap .balance_box .money span {font-size: 30px;color: #000}
+.balance_wrap .balance_box .money small {color: #666666;font-size: 14px; padding-top: 10px; display: block;}
+.balance_wrap .balance_box em {padding-left: 10px;font-size: 14px;}
+.balance_wrap .balance_box input {width: 75%; border:none; margin-bottom: 0;font-size: 14px;}
+.balance_wrap .btn {text-align: center; margin-top: 20px;}
+.balance_wrap .btn button {width: 99%; height: 40px; background: #0176ff;color: #fff;border:0;} 

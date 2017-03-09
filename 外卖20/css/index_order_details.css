@@ -1,0 +1,30 @@
+.order_details .merchant_l{background: #fff; margin-top: 25px}
+.order_details .merchant_l .title {padding: 10px 10px;}
+.order_details .merchant_l .title span{display: block; width: 40px;height: 40px;}
+.order_details .merchant_l .title h2 {font-size: 14px; margin-left: 0px;font-weight: bold;}
+.order_details .merchant_l .title span img {width: 100%;height: 100%; }
+.order_details .merchant_l .indent {border-bottom:1px solid #e4e4e4; }
+.order_details .merchant_l .indent p {height: 40px;line-height: 40px;padding: 0 10px;}
+.order_details .merchant_l .indent p span { display: block;}
+.order_details .merchant_l .indent p span:nth-child(1){white-space: nowrap;}
+.order_details .merchant_l .indent p span:nth-child(3){margin-left: 20px; color: #000}
+.order_details .merchant_l .rests{padding: 10px; font-size: 14px; }
+.order_details .merchant_l .rests span{margin-left: 10px;font-size: 14px;float: right; color: orange;}
+.order_details .merchant_l .rests span em{margin-left: 10px;font-size: 14px; }
+.order_details .merchant_l .rests small {font-size: 14px;color: orange;}
+.order_details .merchant_l .rests small em {font-size: 14px;}
+.order_details .merchant_l .tit {border-bottom:1px solid #e4e4e4; position: relative; text-align: center; height: 70px}
+.order_details .merchant_l .tit .img{position: absolute;top: -20px;width: 100%;text-align: center;}
+.order_details .merchant_l .tit .img img{width: 15%;border-radius: 50%;border:3px solid #fff;}
+.order_details .merchant_l .tit h5 {font-size:16px;color: #000;font-weight: bold;margin-top: 5px;}
+
+.order_details .merchant_m {background: #fff;margin-top: 10px;padding-bottom: 10px;}
+.order_details .merchant_m .tit {border-bottom:1px solid #e4e4e4;font-size: 14px; color: #000;padding: 10px;font-weight: bold; }
+.order_details .merchant_m .addr {padding: 5px 10px;}
+.order_details .merchant_m .addr span {display: block; margin-right: 20px;color: #000;}
+.order_details .merchant_m .addr span:nth-child(1){width: 60px}
+.order_details .merchant_m .addr span p {font-size: 12px;line-height: 22px;}
+.order_details .merchant_m .addr span em {color: #999999}
+
+
+.pj_btn {background: #0176ff;color: #fff; border:0;width: 100%; display: block; margin: 0 auto; height: 35px; margin-top: 10px;font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif; }

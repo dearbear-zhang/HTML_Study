@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="">
+  <head>
+          <meta charset="utf-8">
+          <title>Hello</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <meta name="format-detection" content="telephone=no" />
+          <link rel="stylesheet" href="css/mui.min.css"><!--外部css-->
+          <link rel="stylesheet" href="css/comm.css"><!--公共css-->
+          <link rel="stylesheet" href="css/index_my_collect.css"><!--本页css-->
+  </head>     
+  <body>
+      <!-- 内容 -->
+      <header class="mui-bar mui-bar-nav">
+        <a class="back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">我的收藏</h1>
+      </header>
+      <div id="scroll" class="mui-content mui-scroll-wrapper mui-slider-group" style="bottom:5px;top:0px;">
+         <div class="mui-scroll">
+            <div class="mui-content">
+               <div class="taeout_merchant">
+                   <ul class="mui-table-view">
+                       <!-- <li class="be-box box-p-j">
+                           <div class="merchant_l">
+                               <img src="images/coomon/merchant_01.jpg" alt="">
+                           </div>
+                           <div class="merchant_r">
+                               <h5>小花猫老坛酸菜牛肉面</h5>
+                               <p class="p1"><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx01.png" alt=""><span>月销量200单</span></p>
+                               <p class="p2"><span>起送￥20</span>|<span>配送￥2.5</span><em>830M 31分钟</em></p>
+                               
+                           </div>
+                       </li>
+                        <li class="be-box box-p-j">
+                           <div class="merchant_l">
+                               <img src="images/coomon/merchant_01.jpg" alt="">
+                           </div>
+                           <div class="merchant_r">
+                               <h5>小花猫老坛酸菜牛肉面</h5>
+                               <p class="p1"><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx01.png" alt=""><span>月销量200单</span></p>
+                               <p class="p2"><span>起送￥20</span>|<span>配送￥2.5</span><em>830M 31分钟</em></p>
+                               
+                           </div>
+                       </li>
+                        <li class="be-box box-p-j">
+                           <div class="merchant_l">
+                               <img src="images/coomon/merchant_01.jpg" alt="">
+                           </div>
+                           <div class="merchant_r">
+                               <h5>小花猫老坛酸菜牛肉面</h5>
+                               <p class="p1"><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx01.png" alt=""><span>月销量200单</span></p>
+                               <p class="p2"><span>起送￥20</span>|<span>配送￥2.5</span><em>830M 31分钟</em></p>
+                               
+                           </div>
+                       </li>
+                        <li class="be-box box-p-j">
+                           <div class="merchant_l">
+                               <img src="images/coomon/merchant_01.jpg" alt="">
+                           </div>
+                           <div class="merchant_r">
+                               <h5>小花猫老坛酸菜牛肉面</h5>
+                               <p class="p1"><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx01.png" alt=""><span>月销量200单</span></p>
+                               <p class="p2"><span>起送￥20</span>|<span>配送￥2.5</span><em>830M 31分钟</em></p>
+                              
+                           </div>
+                       </li> -->
+                   </ul>
+               </div>
+            </div>  
+         </div>
+      </div>
+      
+      
+      <script src="js/jquery-3.1.1.min.js"></script><!--jquery-->
+      <script src="js/mui.min.js"></script><!--外部js-->
+      <script src="js/base.js"></script><!--基础js-->
+      <script src="js/md5.js"></script><!--加密js-->
+      <script src="js/mui.pullToRefresh.js"></script><!--下拉刷新js-->
+      <script src="js/mui.pullToRefresh.material.js"></script><!--下拉刷新js-->
+      <script src="js/itemjs/index_my_collect.js"></script><!--本页js-->
+      <script>
+
+      var curr=1;//分页页码
+      var myself;//结束div
+       mui.init({
+        swipeBack: true
+       });
+        //阻止触摸
+       $('body').on('touchmove',function(event){
+            event.preventDefault();
+        });
+      // 下拉刷新
+     (function($) {
+            //阻尼系数
+              var deceleration = mui.os.ios?0.003:0.00006;
+              $('.mui-scroll-wrapper').scroll({
+                indicators: true, //是否显示滚动条
+                deceleration:deceleration
+                });
+
+              // $.ready(function() {
+              //  collect()
+              //  //循环初始化所有下拉刷新，上拉加载。
+              //  $.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+              //    $(pullRefreshEl).pullToRefresh({
+              //      up: {
+              //        callback: function() {
+              //          var self = this;
+              //          setTimeout(function() {
+              //            var ul = self.element.querySelector('.mui-table-view');
+              //            ul.appendChild(createFragment(ul, index,htmldata.length));
+              //            self.endPullUpToRefresh();
+              //          }, 1000);
+              //        }
+              //      }
+              //    });
+              //  });
+
+              //  var createFragment = function(ul, index, count, reverse) {
+              //    var length = ul.querySelectorAll('li').length;
+              //    var fragment = document.createDocumentFragment();
+              //    var li;
+              //    console.log(htmldata)
+              //    for (var i = 0; i <count; i++) {
+
+              //      li = document.createElement('li');
+              //      li.className = 'be-box box-p-j';
+              //      // li.innerHTML = '第' + (index + 1) + '个选项卡子项-' + (length + (reverse ? (count - i) : (i + 1)));
+              //     li.innerHTML = '<div class="merchant_l">'
+              //                      +'<img src="images/coomon/merchant_01.jpg" alt="">'
+              //                  +'</div>'
+              //                  +'<div class="merchant_r">'
+              //                      +'<h5>'+htmldata.cusname+'</h5>'
+              //                      +'<p class="p1"><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx02.png" alt=""><img src="images/coomon/xx01.png" alt=""><span>月销量200单</span></p>'
+              //                      +'<p class="p2"><span>起送￥20</span>|<span>配送￥2.5</span><em>830M 31分钟</em></p>'
+              //                  +'</div>'
+                          
+              //      fragment.appendChild(li);
+              //    }
+              //    return fragment;
+              //  };
+              // });
+
+
+            $.ready(function() {
+
+                    collect(curr);//本页函数
+
+                      //循环初始化所有下拉刷新，上拉加载。
+                      $.each(document.querySelectorAll('.mui-scroll'), function(index, pullRefreshEl) {
+                        $(pullRefreshEl).pullToRefresh({
+                          up: {
+                            contentnomore: '没有更多数据了',
+                            callback: function() {
+                              var self = this;
+                              myself=this;//结束div赋值
+                              setTimeout(function() {
+                                var ul = self.element.querySelector('.mui-table-view');
+                                ul.appendChild(createFragment(ul, index , 3));
+                                self.endPullUpToRefresh();
+                                if(refishmark==1){
+                                  self.endPullUpToRefresh(true);
+                                }
+                              }, 1000);
+                            }
+                          }
+                        });
+                      });
+
+                      
+                      var createFragment = function(ul, index, count, reverse) {
+                        curr++;
+                        var fragment = document.createDocumentFragment();
+                        collect(curr);//本页函数
+                        return fragment;
+                        
+                      };
+              });
+            })(mui);
+      </script>
+  </body>
+</html>

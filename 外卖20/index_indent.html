@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Hello</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/mui.min.css"><!--外部css-->
+  <link rel="stylesheet" href="css/comm.css"><!--公共css-->
+  <link rel="stylesheet" href="css/index_indent.css"><!--本页css-->
+  <style type="text/css">
+    .clearfix:after{ content:""; display:block; height:0; overflow:hidden; clear:both; visibility:hidden;}
+    .goodsname{width: 70%;white-space: nowrap;text-overflow: ellipsis;color: #000}
+    .goodsnum{width: 10%;text-align: left;font-weight: 700;color: #000;white-space: nowrap;}
+    .goodsqty{width: 20%;text-align: right;white-space: nowrap;}
+    .taeout_merchant .merchant_l .indent p span:nth-child(3){margin-left: 0}
+    .addlist{position: absolute;top: 0;z-index: 9999;background: rgba(0,0,0,0.8);height: 100%;width: 100%;}
+    .addlist .content{position: absolute;display: inline-block;background: #fff;color: #000;width: 100%;height: 100%;margin-top: 44px;padding: 8px 10px}
+    .addlist .content li{position: relative;border-bottom: 1px solid #e5e5e5}
+    .addlist .content .addcontent{padding: 10px;width: 90%}
+    .addlist .content .addcontent .name{font-size: 1.3em;color: #333;font-size: 1.1em}
+    .addlist .content .addcontent .name span:nth-child(1){color: #000;font-size: 1.3em;padding-right: 1em}
+    .addlist .content .addcontent .address{color: #333;font-size: 1em;padding-top: 5px}
+    .addlist .gongsi{background: #99c3f3;color: #fff;border-radius: 2px;padding: 2px 4px;margin-left: 20px; display: inline-block;font-size: 12px}
+    .addlist .gongsi2{background: #ccc;color: #fff;border-radius: 2px;padding: 2px 4px;margin-left: 20px; display: inline-block;font-size: 12px}
+    .addlist .select{position: absolute;right: 5px;top:25%;padding: 2px 4px;background: #00B700;color: #fff;border-radius: 2px;}
+  </style>
+</head>     
+<body style="background:#f2f1f1;">
+
+  <!-- 内容 -->
+  <div id="MyApp">
+    <!--选择地址-->
+    <div class="addlist" style="display: none;">
+      <header class="mui-bar mui-bar-nav">
+         <a class="mui-icon mui-icon-left-nav mui-pull-left" onclick="gone(this)"></a>
+        <h1 class="mui-title">选择地址</h1>
+      </header>
+      <div class="content">
+        <ul>
+          <li onclick="selectaddress(this)" class="selectaddress clearfix" v-for="item in AddressList">
+           <div class="addcontent">
+             <div class="name">
+               <span v-text="item.name"></span>
+               <span v-text="item.phone"></span>
+               <span class="gongsi" v-text="item.div"></span>
+               <span class="gongsi2" v-if="item.is_defaut==1">默认</span>
+             </div>
+             <div class="address">
+               
+               <span class="dtl1" v-text="item.address"></span>
+             </div>
+                        <!--  <div class="select">
+                           选择
+                         </div> -->
+                       </div>
+                       
+                     </li>
+                   </ul>
+                   
+                 </div>
+               </div>
+               
+
+               <header class="mui-bar mui-bar-nav">
+                <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+                <h1 class="mui-title">订单</h1>
+              </header>
+              
+              <div id="scroll" class="mui-content mui-scroll-wrapper" style="bottom:0px;top:0px;">
+                <div class="mui-scroll">
+                  <div class="mui-content">
+                    <div class="head be-box box-p-a">
+                      <span><img src="images/coomon/address.png" alt=""></span>
+                      <small class="box-flex1 btn-address"><b style="font-weight:normal;">请选择一个地址</b></small>
+                      <span><img src="images/coomon/address_jt.png" alt=""></span>
+                    </div>
+                    <div class="taeout_merchant">
+                     <ul>
+                       <li>
+                         <div class="merchant_l">
+                           <div class="title be-box box-p-a">
+                             <span><img :src="Customer.logo" alt=""></span>
+                             <h2 v-text="Customer.cusname"></h2>
+                           </div>
+                           <div class="indent" >
+                             <p class="be-box be-p-a"  v-for="item in List" :carid="item.carid">
+                               <span class="box-flex1 goodsname" v-text="item.goodsname"></span>
+                               <span class="goodsnum">x<em v-text="item.qty"></em></span>
+                               <span class="goodsqty">￥<template>{{item.marketcost}}</template></span>
+                             </p>
+                             <p class="be-box be-p-a">
+                               <span class="box-flex1 goodsname">配送费</span>
+                               <span class="goodsnum"><em></em></span>
+                               <span class="goodsqty">￥<template>{{Customer.deliverycost}}</template></span>
+                             </p>
+                              <!--  <div class="rests">
+                                 <span>餐盒</span>
+                                 <small>￥2</small>
+                               </div> -->
+                             </div>
+                             <div class="merchant_r">
+                              <small>订单备注</small>
+                              <span><input class="remark" type="text" placeholder="备注"></span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                
+                
+
+                <!-- 底部 -->
+                <div class="footer be-box box-p-j" style="diplay:none">
+                  <div class="shopping">待支付￥<template>{{Money}}</template></div>
+                  <div class="total box-flex1">
+                    <p>配送费<span>￥<template>{{Customer.deliverycost}}</template></span></p>
+                  </div>
+                  <button class="btn_order">提交订单</button>
+                </div>
+              </div>
+              <script src="js/jquery-3.1.1.min.js"></script><!--jquery-->
+              <script src="js/mui.min.js"></script><!--外部js-->
+              <script src="js/base.js"></script><!--基础js-->
+              <script src="js/md5.js"></script><!--加密<js--></js-->
+              <script src="js/vue.min.js"></script><!--vue<js--></js-->
+              <script src="js/itemjs/index_indent.js"></script><!--本页js-->
+              <script>
+           //阻止触摸
+           $('body').on('touchmove',function(event){
+             event.preventDefault();
+           });
+           (function($) {
+            //阻尼系数
+            var deceleration = mui.os.ios?0.003:0.00006;
+            $('#scroll').scroll({
+                indicators: true, //是否显示滚动条
+                deceleration:deceleration
+              });
+          })(mui); 
+
+        </script>
+      </body>
+      </html>

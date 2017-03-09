@@ -1,0 +1,10 @@
+.payment ul li  {line-height: 40px;}
+.payment ul li a {font-size: 14px;}
+.payment ul li img{width: 30px;height: 30px; margin-bottom: -10px; margin-right: 10px;}
+.payment button{display: block; margin:0 auto; width: 90%;height: 40px;background: #0176ff; color: #fff; margin-top: 20px;border: none;}
+
+.payment .tit {background: #fff;text-align: center; padding: 40px 0;}
+.payment .tit h5 {font-size: 16px; color: #000; margin-bottom: 10px;}
+.payment .tit span {font-size: 20px;color: #fb7d6c}
+
+.payment .surplus {font-size: 12px; }

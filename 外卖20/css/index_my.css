@@ -1,0 +1,26 @@
+.my_head {background: #1982fe;padding: 40px 20px;}
+.my_head .tit {background: url(../images/coomon/my_jt.png) no-repeat right center; background-size:2.5%;line-height: 30px;}
+.my_head .tit em {display: block;color: #fffcfc;font-size: 16px;}
+.my_head .tit em.img {width: 60px;height: 60px;}
+.my_head .tit em.img img {width: 100%;height: 100%; margin-top: 5px; border-radius: 50%;border:3px solid #3e96fe;margin-top: -3px;}
+.my_head .tit em.title { margin:0 10px;}
+.my_head .tit:active{background: rgba(0,0,0,0.1);}
+.my_head .phone3 {background: url(../images/coomon/phone3.png) no-repeat 10px center; background-size:8%; color: #fff;padding-left: 20px;font-size: 12px;}
+
+.listbar ul li {background: url(../images/coomon/address_jt.png) no-repeat 95% center; background-size: 2%; height: 40px; line-height: 40px;padding-left: 20px; color: #333333;font-size: 14px;}
+.listbar ul li:active{background: rgba(0,0,0,0.1);}
+.listbar ul li img {width: 17px;height:18px;margin-right: 20px;margin-bottom: -5px;}
+.listbar .lisa {background: #fff;margin: 10px 0;}
+.listbar .lisb{background: #fff;}
+
+
+.my_head2 {background: #1982fe;padding: 20px 40px 20px 40px;}
+.my_head2 h5 {text-align: center; font-size: 16px; color: #fff;margin-bottom: 20px;}
+.my_head2 .tit {width: 250px;margin: 0 auto;}
+.my_head2 .tit button {width:45%; height: 30px;display: block; background: none;border: 1px solid #fff;color:#fff;}
+.my_head2 .tit button:active{background: rgba(0,0,0,0.2);}
+
+
+/*mui*/
+ .mui-bar {box-shadow:none;border-top: 1px solid #e4e4e4;}
+ .mui-bar-tab .mui-tab-item {color: #989898 }
