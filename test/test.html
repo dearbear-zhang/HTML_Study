@@ -5,6 +5,7 @@
     <title>学习</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/myTheme.css">
 </head>
 <body>
     <header class="mui-bar mui-bar-nav">
@@ -59,6 +60,31 @@
             </li>
         </ul>
     </div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell mui-media">
+            <a href="#">
+                <img class="mui-media-object mui-pull-left" src="images/load1.png">
+                <div class="mui-media-body">
+                    幸福
+                    <p class="mui-ellipsis">啥玩意</p>
+                </div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell">Item 2</li>
+        <li class="mui-table-view-cell">Item 3</li>
+    </ul>
+    <div style="padding: 20px;">
+        <div id="demo1" class="mui-progressbar">
+            <span></span>
+        </div>
+        <div style="padding: 0 20px;">
+            <button type="button" onclick="setPro();">展示进度条</button>
+        </div>
+    </div>
+    <div>
+        <button type="button" onclick="showMask();">显示</button>
+    </div>
+
     <script src="js/mui.min.js"></script>
     <script>
         mui.init();
@@ -97,6 +123,22 @@
                 });
             }
         });
+        function setPro() {
+            var progress = mui("#demo1");
+            var bl = 0;
+            setInterval(function () {
+                progress.progressbar({progress:bl}).show();
+                bl += 10;
+            }, 1000)
+        }
+        function showMask() {
+            var mask = mui.createMask(callback1());
+            mask.show();
+        }
+        function callback1() {
+            mui.toast("取消了操作")
+
+        }
     </script>
 </body>
 </html>
