@@ -17,13 +17,13 @@
 
 #search_all{
     background: #0176FF;
-    padding: 0px 25px 10px 25px;
+    padding: 0px 25px 15px 25px;
 }
 #search{
     background: #FFFFFF;
     /*padding: 20px;*/
-    height: 40px;
-    line-height: 40px;
+    height: 35px;
+    line-height: 35px;
     font-size: 15px;
     border-radius: 10px;
 }
@@ -35,6 +35,36 @@
 }
 #search span a{
     color: #505050;
+}
+
+#classList{
+    background: #ffffff;
+}
+
+#classList ul{
+    width:99%;
+    height:100%;
+}
+
+#classList li{
+    width:25%;
+    height: 40px;
+    margin: 15px 0;
+    float: left;
+    text-align: center;
+}
+
+#classList ul li img{
+    width: 30px;
+    height: 30px;
+}
+
+.clearUI{
+}
+.clearUI:after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
