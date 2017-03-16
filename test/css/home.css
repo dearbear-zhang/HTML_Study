@@ -67,6 +67,41 @@
     clear: both;
 }
 
+#nearBusiness{
+    border-left: 5px solid #0176FF;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    color: gray;
+}
+
+#sortItem{
+    border-bottom: 1px solid #bababa;
+}
+
+#sortItem div{
+    width: 33%;
+    text-align: center;
+    padding:10px 0;
+}
+
+.businessList{
+    background: white;
+}
+
+.businessList business-left-img{
+    display: block;
+}
+
+.businessList div span{
+    display: block;
+}
+.businessList img{
+    padding: 10px;;
+    height: 70px;
+    width: 70px;
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #999;
 }
