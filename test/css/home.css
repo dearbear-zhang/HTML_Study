@@ -85,21 +85,32 @@
     padding:10px 0;
 }
 
+.as-block{
+    display: block;
+}
+
 .businessList{
     background: white;
+    padding: 15px 0 0 0;
 }
 
-.businessList business-left-img{
-    display: block;
-}
-
-.businessList div span{
-    display: block;
-}
-.businessList img{
-    padding: 10px;;
+.businessList .img-left{
+    padding: 0 20px 10px 10px;;
     height: 70px;
     width: 70px;
+}
+
+.businessList .info-img{
+    height: 15px;
+    width: 15px;
+    margin: 2px 0 0 0;
+}
+
+.businessList .info-text{
+    height: 20px;
+    line-height: 20px;
+    position:absolute;
+    padding: 0 0 0 15px;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
