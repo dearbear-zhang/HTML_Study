@@ -9,7 +9,7 @@ function serach() {
 }
 
 $(document).ready(function () {
-    $("#search_input").hover(function () {
+    $("#search_input").focus(function () {
         // $(this).hide();
         $("#search").removeClass("box-p-c");
         $("#search").addClass("box-p-s");
@@ -19,5 +19,11 @@ $(document).ready(function () {
         $("#search").removeClass("box-p-s");
         $("#search").addClass("box-p-c");
         $(this).attr("placeholder", "搜索商家,商品名称");
+    })
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',
+        paginationClickable:true,
+        paginationElement:"li",
+//pagination : '#swiper-pagination1',
     })
 })

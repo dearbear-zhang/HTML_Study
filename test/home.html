@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
 </head>
 <body style="background: #e4e4e4">
     <div id="header_top" class="be-box box-p-j" style="background: #0176FF">
@@ -19,41 +20,84 @@
             <input id="search_input" type="search" placeholder="搜索商家,商品名称" style="border: 0;">
         </div>
     </div>
-    <div id="classList">
-        <ul class="clearUI">
-            <li>
-                <a><img src="images/coomon/foot_01.png"></a>
-                <p>面食</p>
-            </li>
-            <li>
-                <a><img src="images/coomon/foot_02.png"></a>
-                <p>小吃</p>
-            </li>
-            <li>
-                <a><img src="images/coomon/foot_03.png"></a>
-                <p>甜点</p>
-            </li>
-            <li>
-                <a><img src="images/coomon/foot_04.png"></a>
-                <p>西餐</p>
-            </li>
-            <li>
-                <a><img src="images/coomon/foot_05.png"></a>
-                <p>饮料</p>
-            </li>
-            <li>
-                <a><img src="images/coomon/foot_06.png"></a>
-                <p>鲜花</p>
-            </li>
-            <li>
-                <a><img src="images/coomon/foot_07.png"></a>
-                <p>海鲜</p>
-            </li>
-            <li>
-                <a><img src="images/coomon/foot_08.png"></a>
-                <p>火锅</p>
-            </li>
-        </ul>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="classList swiper-slide">
+                <ul class="clearUI">
+                    <li>
+                        <a><img src="images/coomon/foot_01.png"></a>
+                        <p>面食</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_02.png"></a>
+                        <p>小吃</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_03.png"></a>
+                        <p>甜点</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_04.png"></a>
+                        <p>西餐</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_05.png"></a>
+                        <p>饮料</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_06.png"></a>
+                        <p>鲜花</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_07.png"></a>
+                        <p>海鲜</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_08.png"></a>
+                        <p>火锅</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="classList swiper-slide">
+                <ul class="clearUI">
+                    <li>
+                        <a><img src="images/coomon/foot_01.png"></a>
+                        <p>面食</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_02.png"></a>
+                        <p>小吃</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_03.png"></a>
+                        <p>甜点</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_04.png"></a>
+                        <p>西餐</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_05.png"></a>
+                        <p>饮料</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_06.png"></a>
+                        <p>鲜花</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_07.png"></a>
+                        <p>海鲜</p>
+                    </li>
+                    <li>
+                        <a><img src="images/coomon/foot_08.png"></a>
+                        <p>火锅</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
     </div>
     <p id="nearBusiness">附近的推荐商家</p>
     <div id="sortItem" class="be-box box-p-j" style="background: white">
@@ -70,27 +114,94 @@
             <img src="images/coomon/head_jt01.png"/>
         </div>
     </div>
-    <div class="be-box box-a-s businessList">
-        <span class="as-block"><img class="img-left" src="images/index/merchant_01.jpg"></span>
-        <div>
-            <span class="as-block"><a>有家厨房(湖里万达店)</a></span>
-            <div style="padding: 5px 0;">
-                <img src="images/coomon/mer_x1.png" style="height: 12px; width: 12px;">
-                <a>月销量4单</a>
+    <div style="margin-bottom: 60px">
+        <div class="be-box box-a-s businessList">
+            <span class="as-block"><img class="img-left" src="images/index/merchant_01.jpg"></span>
+            <div>
+                <span class="as-block"><a>有家厨房(湖里万达店)</a></span>
+                <div style="padding: 5px 0;">
+                    <img src="images/coomon/mer_x1.png" style="height: 12px; width: 12px;">
+                    <a>月销量4单</a>
+                </div>
+                <div style="color: gray;">
+                    <a>起送¥30|</a>
+                    <a>配送费¥3</a>
+                    <a>距离0.05公里</a>
+                </div>
+                <p style="border-bottom: 1px solid gray; padding: 5px 0;"></p>
+                <div style="padding: 5px 0 0 0;">
+                    <img src="images/coomon/new_02.png" class="info-img">
+                    <a class="info-text">满30减5 满50减10 满100减30</a>
+                </div>
+                <div style="padding: 5px 0 0 0;">
+                    <img src="images/coomon/new_01.png" class="info-img">
+                    <a class="info-text">新用户下单有好礼</a>
+                </div>
             </div>
-            <div style="color: gray;">
-                <a>起送¥30|</a>
-                <a>配送费¥3</a>
-                <a>距离0.05公里</a>
+        </div>
+        <div class="be-box box-a-s businessList" style="margin-top: 10px">
+            <span class="as-block"><img class="img-left" src="images/index/merchant_01.jpg"></span>
+            <div>
+                <span class="as-block"><a>有家厨房(湖里万达店)</a></span>
+                <div style="padding: 5px 0;">
+                    <img src="images/coomon/mer_x1.png" style="height: 12px; width: 12px;">
+                    <a>月销量4单</a>
+                </div>
+                <div style="color: gray;">
+                    <a>起送¥30|</a>
+                    <a>配送费¥3</a>
+                    <a>距离0.05公里</a>
+                </div>
+                <p style="border-bottom: 1px solid gray; padding: 5px 0;"></p>
+                <div style="padding: 5px 0 0 0;">
+                    <img src="images/coomon/new_02.png" class="info-img">
+                    <a class="info-text">满30减5 满50减10 满100减30</a>
+                </div>
+                <div style="padding: 5px 0 0 0;">
+                    <img src="images/coomon/new_01.png" class="info-img">
+                    <a class="info-text">新用户下单有好礼</a>
+                </div>
             </div>
-            <p style="border-bottom: 1px solid gray; padding: 5px 0;"></p>
-            <div style="padding: 5px 0 0 0;">
-                <img src="images/coomon/new_02.png" class="info-img">
-                <a class="info-text">满30减5 满50减10 满100减30</a>
+        </div>
+        <div class="be-box box-a-s businessList" style="margin-top: 10px">
+            <span class="as-block"><img class="img-left" src="images/index/merchant_01.jpg"></span>
+            <div>
+                <span class="as-block"><a>有家厨房(湖里万达店)</a></span>
+                <div style="padding: 5px 0;">
+                    <img src="images/coomon/mer_x1.png" style="height: 12px; width: 12px;">
+                    <a>月销量4单</a>
+                </div>
+                <div style="color: gray;">
+                    <a>起送¥30|</a>
+                    <a>配送费¥3</a>
+                    <a>距离0.05公里</a>
+                </div>
+                <p style="border-bottom: 1px solid gray; padding: 5px 0;"></p>
+                <div style="padding: 5px 0 0 0;">
+                    <img src="images/coomon/new_02.png" class="info-img">
+                    <a class="info-text">满30减5 满50减10 满100减30</a>
+                </div>
+                <div style="padding: 5px 0 0 0;">
+                    <img src="images/coomon/new_01.png" class="info-img">
+                    <a class="info-text">新用户下单有好礼</a>
+                </div>
             </div>
-            <div style="padding: 5px 0 0 0;">
-                <img src="images/coomon/new_01.png" class="info-img">
-                <a class="info-text">新用户下单有好礼</a>
+        </div>
+    </div>
+
+    <div class="bottom-navi">
+        <div class="be-box box-p-j">
+            <div class="navi-item">
+                <span><img class="navi-item-img" src="images/coomon/footer_nav01b.png"></span>
+                <span><a>外卖</a></span>
+            </div>
+            <div class="navi-item">
+                <span><img class="navi-item-img" src="images/coomon/footer_nav02.png"></span>
+                <span><a>订单</a></span>
+            </div>
+            <div class="navi-item">
+                <span><img class="navi-item-img" src="images/coomon/footer_nav03.png"></span>
+                <span><a>我的</a></span>
             </div>
         </div>
     </div>
@@ -98,5 +209,7 @@
 </html>
 
 <script src="js/jquery-3.1.1.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<!--<script src="js/swiper-3.4.2.min.js"></script>-->
 <!--本页js-->
 <script src="js/my/home.js"></script>

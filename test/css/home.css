@@ -37,16 +37,16 @@
     color: #505050;
 }
 
-#classList{
+.classList{
     background: #ffffff;
 }
 
-#classList ul{
+.classList ul{
     width:99%;
     height:100%;
 }
 
-#classList li{
+.classList li{
     width:25%;
     height: 40px;
     margin: 15px 0;
@@ -54,7 +54,7 @@
     text-align: center;
 }
 
-#classList ul li img{
+.classList ul li img{
     width: 30px;
     height: 30px;
 }
@@ -111,6 +111,28 @@
     line-height: 20px;
     position:absolute;
     padding: 0 0 0 15px;
+}
+
+.bottom-navi{
+    background: white;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    border-top: 1px solid #dadada;
+}
+
+.bottom-navi .navi-item{
+    text-align: center;
+    padding: 5px 35px;
+}
+
+.bottom-navi .navi-item-img{
+    height: 25px;
+    width: auto;
+}
+
+.bottom-navi span{
+    display: block;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
