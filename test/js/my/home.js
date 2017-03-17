@@ -26,4 +26,9 @@ $(document).ready(function () {
         paginationElement:"li",
 //pagination : '#swiper-pagination1',
     })
+
+    var sortItem = 0;
+    $("#item-text").onclick(function () {
+    })
+
 })

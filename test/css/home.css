@@ -75,14 +75,24 @@
     color: gray;
 }
 
-#sortItem{
+.sortItem{
     border-bottom: 1px solid #bababa;
+    background: white;
+    color: gray;
 }
 
-#sortItem div{
-    width: 33%;
+.sortItem div{
     text-align: center;
-    padding:10px 0;
+    padding:10px 20px;
+}
+
+.sortItem .item-text{
+    color: gray;
+}
+
+.sortItem .item-img{
+    width: 10px;
+    height: 10px;
 }
 
 .as-block{
