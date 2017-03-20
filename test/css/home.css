@@ -158,6 +158,7 @@
 }
 
 .bottom-navi .navi-item{
+    display: block;
     text-align: center;
     padding: 5px 35px;
 }
