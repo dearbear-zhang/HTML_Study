@@ -94,6 +94,32 @@
     width: 10px;
     height: 10px;
 }
+/*排序规则*/
+.sortRule{
+    background: white;
+    border-bottom: 1px solid #bababa;
+    padding: 5px 0;
+}
+
+.sortRule ul li{
+    display: table-cell;
+    text-align: center;
+    width:1%;
+}
+
+.sortItem2{
+
+}
+
+.sortRule ul li.active{
+    color:#0176ff;
+}
+
+.sortRule ul li em img{
+    padding: 0px 4px;
+    width: 8px;
+    height: 6px;
+}
 
 .as-block{
     display: block;
