@@ -31,4 +31,5 @@ function pageInit() {
         self.append(sub);
     }
     mui.toast("准备成功");
+
 }
