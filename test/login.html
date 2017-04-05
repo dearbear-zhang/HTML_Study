@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/login.css">
 </head>
-<body class="login_bg" style="background-image: url(images/login_bg.png)">
-
+<body class="login_bg">
     <header class="login_top">
         <h1>店长版</h1>
     </header>
     <div class="login_in">
-        <div style="line-height: 70px; height: 70px">
+        <div style="line-height: 50px; height: 50px">
             <img class="login_img" src="images/login_account.png">
             <input id="account" class="login_input" type="text" placeholder="请输入账号">
         </div>
         <input class="login_underline" readonly="readonly">
-        <div>
+        <div style="line-height: 50px; height: 50px">
             <img class="login_img" src="images/login_pwd.png">
             <input id="pwd" class="login_input" type="text" placeholder="请输入密码">
-            <img class="login_img" src="images/login_pwd_forget.png">
+            <img class="login_img" src="images/login_pwd_forget.png" style="position: relative;">
         </div>
         <input class="login_underline">
         <button class="login_button" type="button" onclick="onLoginIn()">登录</button>

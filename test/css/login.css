@@ -1,56 +1,57 @@
 .login_bg{
-    background-size: cover;
     font-size:62.5%;
     font-family: PingFangSC-Regular, sans-serif;
+    background-image: url(../images/login_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .login_top{
     color: #ffffff;
     font-size: 24px;
     text-align: center;
-    padding: 300px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
 }
 
 .login_in{
     color: #ffffff;
-    padding: 650px 0px 0px 100px;
-    /* font-size: 24px; */
-    height: 70px;
+    padding:170px 0 0 0;
 }
 
 .login_input{
     position: relative;
-    margin: 0px 0px 0px 50px;
-    height: 70px;
+    margin: 0px 0px 0px 20px;
+    height: 50px;
     font-size: 30px;
-    width: 75%;
+    width: 65%;
     border: 0;
     background: rgba(0,0,0,0);
 }
 
 .login_underline{
     position: relative;
-    margin: 20px 0px 0px 12%;
-    width: 88%;
+    margin: 5px 0px 0px 16%;
+    width: 84%;
     background: rgba(0,0,0,0);
     border: 0;
-    border-top: 1px solid
+    border-top: 1px solid;
 }
 
 .login_img{
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
+    margin: 0 0 10px 0;
 }
 
 .login_button{
-    width: 90%;
-    height: 130px;
-    border-radius: 60px;
-    font-size: 40px;
+    width: 100%;
+    height: 49px;
+    border-radius: 30px;
+    font-size: 30px;
     background: #0176FF;
     color: #ffffff;
-    margin: 70px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 input::-webkit-input-placeholder {

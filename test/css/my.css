@@ -1,0 +1,22 @@
+.bottom-navi{
+    background: white;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    border-top: 1px solid #dadada;
+}
+
+.bottom-navi .navi-item{
+    display: block;
+    text-align: center;
+    padding: 5px 35px;
+}
+
+.bottom-navi .navi-item-img{
+    height: 25px;
+    width: auto;
+}
+
+.bottom-navi span{
+    display: block;
+}
