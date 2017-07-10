@@ -1,0 +1,19 @@
+
+#test1{
+    width: 500px;
+    height: 500px;
+    background: red;
+    background-image: url(../images/coomon/add_address.png);
+    background-position: 0 120px;
+    background-repeat: no-repeat;
+}
+
+#test1 .test11{
+    width: 30px;
+    /*height: 30px;*/
+    background: orange;
+}
+.test11{
+    width: 30px;
+    height: 30px;
+}
