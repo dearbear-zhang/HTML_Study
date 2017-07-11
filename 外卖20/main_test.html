@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Html学习</title>
+    <link rel="stylesheet" href="css/main_test.css">
+    <link rel="stylesheet" href="css/css_init.css">
 </head>
 <style>
     #container{
-        width: 700px;;
+        width: 1002px;;
         margin: 0 auto;
         background: gray;
     }
     #header{
         height: 120px;;
-        background: orange;
+        background: gray url("images/coomon/balance.png") ;
+
+    }
+    #navi{
+        margin: 20px 0;
+    }
+    #navi li{
+        width: 200px;
+        margin: 10px 0;
+        background: gray;
+        float: left;
+    }
+    #navi a{
+        height: 30px;;
+        text-align: center;
+        margin:auto 0;
+        line-height: 30px;
+        color: #363636;
+        font-size: 15px;
+        font-family:"微软雅黑";
+        display: block;
+    }
+    #navi a:hover{
+        color: white;
+        background: url("images/coomon/del_img01.jpg");
     }
     #main{
         height: 600px;;
@@ -20,12 +46,12 @@
     }
     #lside{
         float: left;
-        width: 700px;
+        width: 300px;
         height: 600px;
         background: pink;
     }
     .four{
-        width: 300px;
+        width: 110px;
         height: 260px;
         margin: 10px;
         padding: 10px;;
@@ -46,23 +72,35 @@
 <body>
     <div id="container">
         <div id="header">
+            <img src="images/coomon/add_address.png">
+            <ul id="navi">
+                <li><a href="">导航1</a></li>
+                <li><a href="">导航2</a></li>
+                <li><a href="">导航3</a></li>
+                <li><a href="">导航4</a></li>
+                <li><a href="">导航5</a></li>
+            </ul>
         </div>
         <div id="main">
             <div id="lside">
-                <div class="four">
-                    啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-                </div>
-                <div class="four">
-                    啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-                </div>
-                <div class="four">
-                    啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-                </div>
-                <div class="four">
-                    啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-                </div>
+                <div class="subtitle"></div>
+                <div class="four">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</div>
+                <div class="four">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</div>
+                <div class="four">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</div>
+                <div class="four">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</div>
             </div>
-            <div id="rside"></div>
+            <div id="rside">
+                <div class="subtitle"></div>
+                <ul id="art">
+                    <li1>文章1</li1>
+                    <li2>文章2</li2>
+                    <li3>文章3</li3>
+                    <li4>文章4</li4>
+                    <li5>文章5</li5>
+                    <li6>文章6</li6>
+                    <li7>文章7</li7>
+                </ul>
+            </div>
         </div>
         <div id="footer">
         </div>
