@@ -1,0 +1,154 @@
+#container{
+    width: 1002px;;
+    margin: 0 auto;
+    /*background: gray;*/
+}
+#header{
+    height: 120px;;
+    background: gray url("../images/coomon/balance.png") ;
+
+}
+#navi{
+    /*margin: 20px 0;*/
+}
+#navi li{
+    width: 200px;
+    background: gray;
+    float: left;
+}
+#navi a{
+    height: 30px;;
+    text-align: center;
+    margin:auto 0;
+    line-height: 30px;
+    color: #363636;
+    font-size: 15px;
+    font-family:"微软雅黑";
+    display: block;
+}
+#navi a:hover{
+    color: white;
+    background: url("../images/coomon/del_img01.jpg");
+}
+#banner{
+    margin: 10px 0;
+}
+#main{
+
+}
+
+.subtitle{
+    height: 50px;
+    background: #eee;
+}
+
+.subtitle img{
+    width: 60px;
+    margin:5px 5px 0 5px;
+    float: left;
+}
+.subtitle h1{
+    height: 50px;
+    font-family:"微软雅黑";
+    font-size: 16px;
+    line-height: 50px;
+    float: left;
+}
+.subtitle a{
+    height: 50px;;
+    color: gray;
+    line-height: 50px;
+    float: right;
+}
+.four{
+    width: 326px;
+    height: 200px;
+    margin: 10px;
+    background: #eee;
+    float: left;
+}
+.four img{
+    width: 150px;
+    margin-left: 10px;
+    /*padding: 6px;*/
+    float: left;
+    border: 5px solid white;
+}
+.four ul{
+    margin-left: 4px;
+    float: left;
+}
+.four li{
+    background: url("../images/coomon/xx01.png") no-repeat left;
+    padding-left: 15px;
+}
+.four h2{
+    margin: 5px;
+    font-size: 16px;
+    font-family: "微软雅黑", sans-serif;
+}
+.four a{
+    color: gray;
+}
+
+.four a:visited{
+    color: blue;
+}
+#lside{
+    height: 483px;
+    width:694px;
+    background: blue;
+    border: 1px solid #eee;
+    float: left;
+    border-top: none;
+}
+#rside{
+    width:294px;
+    float: right;
+    /*background: green;*/
+}
+#art{
+    background: #eee;
+    margin-top: 1px;
+    padding-top: 10px;
+}
+#art li{
+}
+#art a{
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: url("../images/coomon/xx02.png") no-repeat left;
+    background-size: 10px 10px;
+    padding-left: 10px;
+}
+#art a:hover{
+    background: #eee;
+}
+.contact{
+    height: 150px;
+    margin-top: 1px;
+    background: #eee;
+}
+.clr{
+    clear: both;
+}
+#footer{
+    height: 120px;;
+    /*background: pink;*/
+}
+#footer ul{
+    height: 40px;
+    background: #eee;
+    margin-top: 10px;
+}
+#footer li{
+    float: left;
+    padding: 10px;;
+}
+#footer p{
+    /*clear: both;*/
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
