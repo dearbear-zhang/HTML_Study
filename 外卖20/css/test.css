@@ -17,3 +17,69 @@
     width: 30px;
     height: 30px;
 }
+.content{
+    width: 300px;
+    height: 300px;
+    background: gray;
+    border: 1px solid red;
+}
+.active{
+    background: orange;
+}
+.calender{
+    width: 300px;
+    /*height: 300px;*/
+    margin:0 auto;
+    /*background: gray;*/
+}
+#titleId ul{
+    height: 200px;
+    padding:0 auto;
+    background: gray;
+}
+#titleId div h2{
+    /*text-align: center;*/
+    clear: both;
+}
+ul li{
+/*li{*/
+    color: white;
+    width: 70px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    background: #000;
+}
+
+#timer{
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background: black;
+    color: white;;
+    line-height: 30px;
+}
+#timer .img{
+    /*display: block;*/
+    /*float: left;*/
+}
+
+#slidingMenu{
+    width: 150px;
+    height: 200px;
+    background-color: red;
+    clear: both;
+    position: absolute;
+    left: -150px;
+    filter:alpha(opacity:30);
+    opacity:0.3;
+}
+#slidingMenu span{
+    width: 20px;
+    height: 60px;
+    line-height: 20px;
+    background: blue;
+    position: absolute;
+    right: -20px;
+    top: 70px;
+}

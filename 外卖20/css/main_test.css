@@ -101,11 +101,15 @@
     border: 1px solid #eee;
     float: left;
     border-top: none;
+    border-radius: 15px;
 }
 #rside{
     width:294px;
     float: right;
+    padding: 5px;
     /*background: green;*/
+    /*border: 1px solid red;*/
+    /*border-radius: 15px;*/
 }
 #art{
     background: #eee;
