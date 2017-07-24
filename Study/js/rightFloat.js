@@ -6,7 +6,7 @@ window.onscroll = function () {
     var scrollTop= document.scrollTop || document.body.scrollTop;
     // oDiv.style.top = document.documentElement.clientHeight - oDiv.offsetHeight + scrollTop + "px";
     // oDiv.style.top = oDiv.offsetTop + scrollTop + "px";
-    startMove(document.documentElement.clientHeight - oDiv.offsetHeight + scrollTop)
+    startMove(parseInt((document.documentElement.clientHeight - oDiv.offsetHeight)/2+ scrollTop))
 };
 
 function startMove(toPosition) {
@@ -16,8 +16,10 @@ function startMove(toPosition) {
     timer = setInterval(function () {
         var speed = 0.2 * (toPosition-oDiv.offsetTop);
         speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+        // if (Math.abs(oDiv.offsetTop - toPosition) <= Math.abs(speed)){
         if (oDiv.offsetTop == toPosition){
             clearInterval(timer);
+            // oDiv.style.top = toPosition;
         }else {
             oDiv.style.top = oDiv.offsetTop + speed + "px";
         }
