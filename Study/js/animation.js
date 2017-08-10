@@ -1,6 +1,7 @@
 /**
  * Created by Administrator on 2017/7/24.
  */
+var timer;
 window.onload = function () {
     var btn = document.getElementsByTagName("input")[0];
     btn.onclick = function () {
@@ -13,7 +14,8 @@ window.onload = function () {
  */
 function moveSta_speedChange(toPosition) {
     var oDiv1 = document.getElementById("div1");
-    var timer = setInterval(function () {
+    clearInterval(timer);
+    timer = setInterval(function () {
         var speed = 0.1 * (toPosition - oDiv1.offsetLeft);
         speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
         if (oDiv1.offsetLeft == toPosition){
@@ -29,7 +31,8 @@ function moveSta_speedChange(toPosition) {
  */
 function moveStart_speed_constant(toPosition) {
     var oDiv1 = document.getElementById("div1");
-    var timer = setInterval(function () {
+    clearInterval(timer);
+    timer = setInterval(function () {
         var speed;
         if (oDiv1.offsetLeft < toPosition){
             speed = 10;
